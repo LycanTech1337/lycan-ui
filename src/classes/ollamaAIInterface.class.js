@@ -60,15 +60,29 @@ class OllamaAIInterface {
 
     async queryOllamaAI(question) {
         this.addMessage("Ollama AI", "Thinking...");
-        // Placeholder for actual Ollama AI API call
-        // For now, simulate response with timeout
-        setTimeout(() => {
+        try {
+            const response = await fetch("http://localhost:33119/query", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ question })
+            });
+            if (!response.ok) {
+                throw new Error(`Server responded with status ${response.status}`);
+            }
+            const data = await response.json();
             // Remove "Thinking..." message
             const thinkingMsg = Array.from(this.output.children).find(child => child.textContent.includes("Thinking..."));
             if (thinkingMsg) this.output.removeChild(thinkingMsg);
-            // Add simulated response
-            this.addMessage("Ollama AI", `You asked: "${question}". This is a simulated response.`);
-        }, 1500);
+            // Assuming the response has an 'answer' field
+            this.addMessage("Ollama AI", data.answer || "No answer received.");
+        } catch (error) {
+            // Remove "Thinking..." message
+            const thinkingMsg = Array.from(this.output.children).find(child => child.textContent.includes("Thinking..."));
+            if (thinkingMsg) this.output.removeChild(thinkingMsg);
+            this.addMessage("Ollama AI", `Error: ${error.message}`);
+        }
     }
 }
 

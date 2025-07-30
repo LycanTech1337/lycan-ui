@@ -14,8 +14,12 @@ body {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    background: linear-gradient(90deg, var(--color_light_black) 1.85vh, transparent 1%) center, linear-gradient(var(--color_light_black) 1.85vh, transparent 1%) center, var(--color_grey);
-    background-size: 2.04vh 2.04vh;
+    /* Hexagonal grid background pattern, hexagons approx 10px wide */
+    background-color: var(--color_grey);
+    background-image:
+        radial-gradient(circle 3px at 15px 26px, var(--color_light_black) 98%, transparent 99%),
+        radial-gradient(circle 3px at 30px 13px, var(--color_light_black) 98%, transparent 99%);
+    background-size: 45px 52px;
 }
 body.solidBackground {
     background: var(--color_light_black);

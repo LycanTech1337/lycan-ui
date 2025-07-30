@@ -492,7 +492,7 @@ window.mods.textEditor = new BasicTextEditor("mod_column_right");
     window.onmouseup = e => {
         if (window.keyboard.linkedToTerm) window.term[window.currentTerm].term.focus();
     };
-    window.term[0].term.writeln("\033[1m"+`Welcome to Lycan-UI v${electron.remote.app.getVersion()} - Electron v${process.versions.electron}`+"\033[0m");
+    window.term[0].term.writeln("\033[1m"+'Welcome to Lycan-UI, Lycan.'+"\033[0m");
 
     await _delay(100);
 

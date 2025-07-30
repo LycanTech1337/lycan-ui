@@ -109,8 +109,11 @@ class LocationGlobe {
             const systemColors = {
                 GPS: 'red',
                 GLONASS: 'blue',
-                Galileo: 'green',
-                BeiDou: 'orange'
+                GALILEO: 'green',
+                BEIDOU: 'yellow',
+                QZSS: 'orange',
+                IRNSS: 'purple',
+                SBAS: 'cyan'
             };
 ];
 navSatellites.forEach(sat => {

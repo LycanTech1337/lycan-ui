@@ -1,0 +1,485 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "gps-biir-2--(prn-13)",
+        "system": "GPS",
+        "altitude": 20080.0835
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.1052,
+          -7.3562
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "gps-biir-4--(prn-20)",
+        "system": "GPS",
+        "altitude": 20266.8702
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.4046,
+          53.5141
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "gps-biir-5--(prn-22)",
+        "system": "GPS",
+        "altitude": 19860.5845
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.8928,
+          -53.4761
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "gps-biir-8--(prn-16)",
+        "system": "GPS",
+        "altitude": 19808.1302
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.2341,
+          43.4817
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "gps-biir-11-(prn-19)",
+        "system": "GPS",
+        "altitude": 20030.0946
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -32.7005,
+          -31.0963
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "gps-biir-13-(prn-02)",
+        "system": "GPS",
+        "altitude": 19806.3405
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.2308,
+          -54.8446
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "gps-biirm-1-(prn-17)",
+        "system": "GPS",
+        "altitude": 19967.8771
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.2902,
+          -45.3462
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "gps-biirm-2-(prn-31)",
+        "system": "GPS",
+        "altitude": 20215.2021
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          155.2245,
+          28.5065
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "gps-biirm-3-(prn-12)",
+        "system": "GPS",
+        "altitude": 20261.5829
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.3952,
+          -12.7043
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "gps-biirm-4-(prn-15)",
+        "system": "GPS",
+        "altitude": 20326.3178
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.2963,
+          -21.1486
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "gps-biirm-5-(prn-29)",
+        "system": "GPS",
+        "altitude": 20138.3662
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -129.4432,
+          53.6612
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "gps-biirm-6-(prn-07)",
+        "system": "GPS",
+        "altitude": 20637.5781
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8325,
+          25.9384
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "gps-biirm-8-(prn-05)",
+        "system": "GPS",
+        "altitude": 20057.4344
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.8174,
+          38.3837
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "gps-biif-1--(prn-25)",
+        "system": "GPS",
+        "altitude": 20278.3942
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -129.8714,
+          7.1184
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "gps-biif-3--(prn-24)",
+        "system": "GPS",
+        "altitude": 20602.9083
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -107.5578,
+          -53.28
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "gps-biif-4--(prn-27)",
+        "system": "GPS",
+        "altitude": 19940.2057
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.244,
+          2.0114
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "gps-biif-5--(prn-30)",
+        "system": "GPS",
+        "altitude": 20342.0054
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.6171,
+          2.9898
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "gps-biif-6--(prn-06)",
+        "system": "GPS",
+        "altitude": 20271.7635
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -12.0743,
+          14.5516
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "gps-biif-7--(prn-09)",
+        "system": "GPS",
+        "altitude": 20104.6598
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.6072,
+          54.3945
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "gps-biif-8--(prn-03)",
+        "system": "GPS",
+        "altitude": 20281.2016
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          63.6671,
+          -9.8593
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "gps-biif-9--(prn-26)",
+        "system": "GPS",
+        "altitude": 20041.2543
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          147.6882,
+          53.0299
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "gps-biif-10-(prn-08)",
+        "system": "GPS",
+        "altitude": 20013.7941
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.5288,
+          -20.4401
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "gps-biif-11-(prn-10)",
+        "system": "GPS",
+        "altitude": 20080.6307
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -173.5187,
+          -49.6092
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "gps-biif-12-(prn-32)",
+        "system": "GPS",
+        "altitude": 19962.692
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          154.0558,
+          -41.7248
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "gps-biii-1--(prn-04)",
+        "system": "GPS",
+        "altitude": 20148.8325
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.8805,
+          40.3848
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "gps-biii-2--(prn-18)",
+        "system": "GPS",
+        "altitude": 20328.9491
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -166.9026,
+          21.3812
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "gps-biii-3--(prn-23)",
+        "system": "GPS",
+        "altitude": 20290.4473
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -141.5681,
+          -23.4958
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "gps-biii-4--(prn-14)",
+        "system": "GPS",
+        "altitude": 20212.4778
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6261,
+          -44.7195
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "gps-biii-5--(prn-11)",
+        "system": "GPS",
+        "altitude": 20190.8118
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -35.1774,
+          39.1412
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "gps-biii-6--(prn-28)",
+        "system": "GPS",
+        "altitude": 20198.2311
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          169.153,
+          8.1654
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "gps-biii-7--(prn-01)",
+        "system": "GPS",
+        "altitude": 20198.4228
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          53.1146,
+          -48.4052
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "gps-biii-8--(prn-21)",
+        "system": "GPS",
+        "altitude": 20185.2041
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.0783,
+          52.744
+        ]
+      }
+    }
+  ]
+}

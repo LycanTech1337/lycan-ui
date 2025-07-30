@@ -3,7 +3,7 @@ class LocationGlobe {
         if (!parentId) throw "Missing parameters";
 
         const path = require("path");
-
+        const gpsSatellites = require('./satellites.json');
         this._geodata = require(path.join(__dirname, "assets/misc/grid.json"));
         require(path.join(__dirname, "assets/vendor/encom-globe.js"));
         this.ENCOM = window.ENCOM;
@@ -104,19 +104,23 @@ class LocationGlobe {
                 this.conns.splice(index, 1);
             };
 
-            // Add random satellites
-            let constellation = [];
-            for(var i = 0; i< 2; i++){
-                for(var j = 0; j< 3; j++){
-                    constellation.push({
-                        lat: 50 * i - 30 + 15 * Math.random(),
-                        lon: 120 * j - 120 + 30 * i,
-                        altitude: Math.random() * (1.7 - 1.3) + 1.3
-                    });
-                }
-            }
-
-            this.globe.addConstellation(constellation);
+            // Add the satellites
+            const navSatellites = gpsSatellites;
+            const systemColors = {
+                GPS: 'red',
+                GLONASS: 'blue',
+                Galileo: 'green',
+                BeiDou: 'orange'
+            };
+];
+navSatellites.forEach(sat => {
+    this.globe.addConstellation([{
+        lat: sat.lat,
+        lon: sat.lon,
+        altitude: sat.altitude / 6371, // If your globe expects altitude in Earth radii, convert km to radii
+        color: systemColors[sat.system] || 'white'
+    }]);
+});;
         }, 2000);
 
         // Init updaters when intro animation is done

@@ -23,7 +23,7 @@ signale.info(`Renderer is Chrome ${process.versions.chrome}`);
 
 const gotLock = app.requestSingleInstanceLock();
 if (!gotLock) {
-    signale.fatal("Error: Another instance of Lycan is already running. Cannot proceed.");
+    signale.fatal("Error: Another instance of Lycan-UI is already running. Cannot proceed.");
     app.exit(1);
 }
 
@@ -43,14 +43,16 @@ ipc.on("log", (e, type, content) => {
 });
 
 var win, tty, extraTtys;
-const settingsFile = path.join(electron.app.getPath("userData"), "settings.json");
-const shortcutsFile = path.join(electron.app.getPath("userData"), "shortcuts.json");
-const lastWindowStateFile = path.join(electron.app.getPath("userData"), "lastWindowState.json");
-const themesDir = path.join(electron.app.getPath("userData"), "themes");
+const configDir = path.join(__dirname, "config");
+
+const settingsFile = path.join(configDir, "settings.json");
+const shortcutsFile = path.join(configDir, "shortcuts.json");
+const lastWindowStateFile = path.join(configDir, "lastWindowState.json");
+const themesDir = path.join(__dirname, "assets/themes");
 const innerThemesDir = path.join(__dirname, "assets/themes");
-const kblayoutsDir = path.join(electron.app.getPath("userData"), "keyboards");
+const kblayoutsDir = path.join(__dirname, "assets/kb_layouts");
 const innerKblayoutsDir = path.join(__dirname, "assets/kb_layouts");
-const fontsDir = path.join(electron.app.getPath("userData"), "fonts");
+const fontsDir = path.join(__dirname, "assets/fonts");
 const innerFontsDir = path.join(__dirname, "assets/fonts");
 
 // Unset proxy env variables to avoid connection problems on the internal websockets
@@ -125,32 +127,32 @@ if(!fs.existsSync(lastWindowStateFile)) {
     signale.info(`Default last window state written to ${lastWindowStateFile}`);
 }
 
-// Copy default themes & keyboard layouts & fonts
-signale.pending("Mirroring internal assets...");
-try {
-    fs.mkdirSync(themesDir);
-} catch(e) {
-    // Folder already exists
-}
-fs.readdirSync(innerThemesDir).forEach(e => {
-    fs.writeFileSync(path.join(themesDir, e), fs.readFileSync(path.join(innerThemesDir, e), {encoding:"utf-8"}));
-});
-try {
-    fs.mkdirSync(kblayoutsDir);
-} catch(e) {
-    // Folder already exists
-}
-fs.readdirSync(innerKblayoutsDir).forEach(e => {
-    fs.writeFileSync(path.join(kblayoutsDir, e), fs.readFileSync(path.join(innerKblayoutsDir, e), {encoding:"utf-8"}));
-});
-try {
-    fs.mkdirSync(fontsDir);
-} catch(e) {
-    // Folder already exists
-}
-fs.readdirSync(innerFontsDir).forEach(e => {
-    fs.writeFileSync(path.join(fontsDir, e), fs.readFileSync(path.join(innerFontsDir, e)));
-});
+/* Removed copying of internal assets to userData directories to use internal assets directly */
+// signale.pending("Mirroring internal assets...");
+// try {
+//     fs.mkdirSync(themesDir);
+// } catch(e) {
+//     // Folder already exists
+// }
+// fs.readdirSync(innerThemesDir).forEach(e => {
+//     fs.writeFileSync(path.join(themesDir, e), fs.readFileSync(path.join(innerThemesDir, e), {encoding:"utf-8"}));
+// });
+// try {
+//     fs.mkdirSync(kblayoutsDir);
+// } catch(e) {
+//     // Folder already exists
+// }
+// fs.readdirSync(innerKblayoutsDir).forEach(e => {
+//     fs.writeFileSync(path.join(kblayoutsDir, e), fs.readFileSync(path.join(innerKblayoutsDir, e), {encoding:"utf-8"}));
+// });
+// try {
+//     fs.mkdirSync(fontsDir);
+// } catch(e) {
+//     // Folder already exists
+// }
+// fs.readdirSync(innerFontsDir).forEach(e => {
+//     fs.writeFileSync(path.join(fontsDir, e), fs.readFileSync(path.join(innerFontsDir, e)));
+// });
 
 // Version history logging
 const versionHistoryPath = path.join(electron.app.getPath("userData"), "versions_log.json");
